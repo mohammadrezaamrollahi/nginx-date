@@ -1,6 +1,5 @@
 mkdir time
 cd time/
-pwd
 date > index.html
 docker run -d --name nginx1 -p 8081:80 -v /root/time:/usr/share/nginx/html:ro nginx
 docker run -d --name nginx2 -p 8082:80 -v /root/time:/usr/share/nginx/html:ro nginx
